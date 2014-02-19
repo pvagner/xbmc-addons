@@ -1,0 +1,1 @@
+../script.module.nvda/lib/nvda.py
