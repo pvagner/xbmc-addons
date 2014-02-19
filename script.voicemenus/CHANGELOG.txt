@@ -1,0 +1,8 @@
+0.0.2 (first public version):
+	Added ability to also anounce window title as it changes
+	Fixed a problem which was causing this addon to show inside the videos
+	Worked around freeze while waiting for builtin action to finish executing in some dialogs (needs testing)
+	Added linux support via script.module.speechdispatcher add-on
+
+0.0.1:
+	Initial basic version
