@@ -1,0 +1,19 @@
+<keymap>
+  <global>
+    <keyboard>
+      <f12>RunPlugin(plugin://script.voicemenus)</f12>
+      <left>RunPlugin(plugin://script.voicemenus?action=Left)</left>
+      <right>RunPlugin(plugin://script.voicemenus?action=Right)</right>
+      <up>RunPlugin(plugin://script.voicemenus?action=Up)</up>
+      <down>RunPlugin(plugin://script.voicemenus?action=Down)</down>
+      <pageup>RunPlugin(plugin://script.voicemenus?action=PageUp)</pageup>
+      <pagedown>RunPlugin(plugin://script.voicemenus?action=PageDown)</pagedown>
+      <return>RunPlugin(plugin://script.voicemenus?action=Select)</return>
+      <enter>RunPlugin(plugin://script.voicemenus?action=Select)</enter>
+      <backspace>RunPlugin(plugin://script.voicemenus?action=Back)</backspace>
+      <key id='65446'>RunPlugin(plugin://script.voicemenus?action=Back)</key>
+      <escape>RunPlugin(plugin://script.voicemenus?action=PreviousMenu)</escape>
+      <tab>RunPlugin(plugin://script.voicemenus?action=FullScreen)</tab>
+    </keyboard>
+  </global>
+</keymap>
