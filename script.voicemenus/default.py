@@ -7,6 +7,12 @@ if sys.platform.find('linux') >=0:
 	from speechdispatcher import SPEECHDISPATCHER as TTS
 else:
 	from nvda import NVDA as TTS
+import re
+
+stripHTMLRegExp=re.compile(r'(<!--.*?-->|<[^>]*>)')
+
+def stripHTML(text):
+	return re.sub(stripHTMLRegExp, '', text)
 
 args = urlparse.parse_qs(sys.argv[2][1:])
 
@@ -25,6 +31,7 @@ if s.canSpeak():
 	if action==None or resp['result']['currentwindow']['id'] !=oldID:
 		text="%s: "%resp['result']['currentwindow']['label']
 	text="%s%s"%(text,resp['result']['currentcontrol']['label'])
+	text=stripHTML(text)
 	s.speak(text)
 s.terminate()
 sys.exit(0)

@@ -1,3 +1,6 @@
+0.0.3:
+	Strip HTML tags from the text to be spoken using regular expression matching
+
 0.0.2 (first public version):
 	Added ability to also anounce window title as it changes
 	Fixed a problem which was causing this addon to show inside the videos
